@@ -1,0 +1,118 @@
+:root{
+	--primary:#0b5ed7;
+	--dark:#0a3a6b;
+	--muted:#6c757d;
+	--bg:#f6f8fb;
+	--card:#ffffff;
+	--accent:#ffdd57;
+}
+*{box-sizing:border-box}
+/* llave extra eliminada */
+
+body{
+	font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, Arial;
+	background:var(--bg);
+	color:#222;
+	margin:0;
+	-webkit-font-smoothing:antialiased;
+}
+
+.container{max-width:1000px;margin:24px auto;padding:0 16px}
+
+header{
+	background:linear-gradient(90deg,var(--primary),var(--dark));
+	color:white;
+	padding:28px 0;
+	text-align:center;
+	box-shadow:0 4px 14px rgba(11,78,215,0.12);
+}
+
+header h1{margin:0;font-size:1.6rem;letter-spacing:0.3px}
+
+nav.main-nav{display:flex;justify-content:center;background:#fff;padding:10px 0;border-bottom:1px solid #e6e9ee}
+nav.main-nav a{color:var(--dark);margin:0 12px;text-decoration:none;padding:8px 12px;border-radius:6px;font-weight:600}
+nav.main-nav a:hover{background:#f1f5fb}
+
+	nav.main-nav a:focus{background:#ffdd57;color:#0a3a6b;outline:2px solid #0b5ed7}
+main{display:flex;gap:24px;align-items:flex-start}
+
+section.card{background:var(--card);padding:20px;border-radius:12px;box-shadow:0 6px 20px rgba(16,24,40,0.04);flex:1}
+
+.login-body{
+	section.card:focus-within{box-shadow:0 0 0 3px #0b5ed7}
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	height:86vh;
+	background:linear-gradient(135deg,#0b5ed7 0%,#ffdd57 100%);
+	background-image: url('../Images/login-bg.svg'), linear-gradient(135deg,#0b5ed7 0%,#ffdd57 100%);
+	background-size: cover;
+	background-position: center;
+}
+.login-box{
+	background:rgba(255,255,255,0.95);
+	padding:36px;
+	border-radius:18px;
+	box-shadow:0 10px 30px rgba(16,24,40,0.12);
+	width:100%;
+	max-width:420px;
+	border:3px solid #ffdd57;
+}
+.login-box h1:focus {
+	outline: none;
+}
+.dashboard-courses{
+	display:grid;
+	grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+	/* Elimina duplicados y asegura consistencia visual */
+	background:var(--card);
+	border-radius:12px;
+	box-shadow:0 4px 16px rgba(16,24,40,0.08);
+	padding:18px;
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	text-align:center;
+}
+.course-card img{
+	width:80px;
+	height:80px;
+	object-fit:cover;
+	border-radius:50%;
+	margin-bottom:12px;
+}
+.certificate{
+.certificate h2{
+	margin:18px 0 6px;
+	font-size:1.4rem;
+	color:#222;
+}
+.certificate .logo{
+	position:absolute;
+	top:24px;
+	right:24px;
+	width:60px;
+	height:60px;
+}
+.form-group{margin:12px 0}
+input[type="text"],textarea{width:100%;padding:12px;border:1px solid #e6e9ee;border-radius:8px;font-size:0.95rem}
+button{background:var(--primary);color:white;border:none;padding:10px 16px;border-radius:8px;font-weight:700;cursor:pointer}
+button.secondary{background:#eef3ff;color:var(--dark)}
+
+.session-bar{display:flex;align-items:center;gap:12px;justify-content:flex-end;padding:8px 16px;background:#fff;border-bottom:1px solid #eef2f7}
+.session-bar strong{margin-left:6px}
+
+ul.forum-list{list-style:none;padding:0;margin:0}
+ul.forum-list li{padding:12px;border-bottom:1px solid #f1f5f9}
+.post-meta{font-size:0.85rem;color:var(--muted);margin-bottom:6px}
+
+.certificate{max-width:780px;margin:40px auto;padding:36px;border:8px solid #f8f9fb;background:linear-gradient(180deg,#fff,#fbfdff);text-align:center;border-radius:8px}
+
+@media(max-width:800px){
+	main{flex-direction:column}
+	.session-bar{justify-content:center}
+}
+
+/* small helpers */
+.muted{color:var(--muted)}
+}
