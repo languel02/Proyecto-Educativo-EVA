@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Actividades</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%230b5ed7'/%3E%3Ctext x='50' y='65' font-size='55' text-anchor='middle' fill='%23ffffff' font-family='Arial' font-weight='700'%3EE%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="../Estilo-Css/style.css">
+</head>
+
+<body>
+	<header>
+		<h1>Actividades</h1>
+	</header>
+	<nav class="main-nav">
+		<a href="dashboard.html">Inicio</a>
+		<a href="recursos.html">Recursos</a>
+		<a href="foro.html">Foro</a>
+		<a href="evaluacion.html">Evaluación</a>
+	</nav>
+
+	<div class="container">
+		<section class="card" aria-label="Actividades del curso">
+			<div style="display:flex;gap:24px;flex-wrap:wrap;justify-content:center;margin-bottom:24px">
+				<div class="activity-card" style="background:#fff;border-radius:12px;box-shadow:0 4px 16px rgba(16,24,40,0.08);padding:18px;width:260px;display:flex;flex-direction:column;align-items:center;transition:box-shadow .2s">
+					<img src="../Images/inteligencia.svg" alt="IA" style="width:80px;border-radius:8px;margin-bottom:12px;">
+					<h3 style="margin:0 0 8px 0;color:#0b5ed7;font-size:1.1rem">Ensayo breve</h3>
+					<p style="font-size:0.95rem;color:#555;text-align:center">Redacta un ensayo de 300-400 palabras sobre el impacto de la inteligencia artificial en los procesos de enseñanza y aprendizaje. <span class="muted" style="font-size:0.92em">Incluye ejemplos prácticos.</span></p>
+				</div>
+				<div class="activity-card" style="background:#fff;border-radius:12px;box-shadow:0 4px 16px rgba(16,24,40,0.08);padding:18px;width:260px;display:flex;flex-direction:column;align-items:center;transition:box-shadow .2s">
+					<img src="../Images/gamificacion.svg" alt="Innovación" style="width:80px;border-radius:8px;margin-bottom:12px;">
+					<h3 style="margin:0 0 8px 0;color:#0b5ed7;font-size:1.1rem">Propuesta de innovación</h3>
+					<p style="font-size:0.95rem;color:#555;text-align:center">Diseña una propuesta (máx. 1 página) que integre una herramienta tecnológica para mejorar la motivación o personalización en tu asignatura.</p>
+				</div>
+				<div class="activity-card" style="background:#fff;border-radius:12px;box-shadow:0 4px 16px rgba(16,24,40,0.08);padding:18px;width:260px;display:flex;flex-direction:column;align-items:center;transition:box-shadow .2s">
+					<img src="../Images/vr.svg" alt="Debate" style="width:80px;border-radius:8px;margin-bottom:12px;">
+					<h3 style="margin:0 0 8px 0;color:#0b5ed7;font-size:1.1rem">Debate</h3>
+					<p style="font-size:0.95rem;color:#555;text-align:center">Organiza (o simula) un debate: <span class="muted" style="font-size:0.92em">¿La tecnología sustituirá la labor docente?</span> Presenta argumentos a favor y en contra.</p>
+				</div>
+			</div>
+			<div style="margin-top:32px;padding:24px;background:#eef3ff;border-radius:12px;box-shadow:0 2px 8px #0b5ed7;">
+				<h2 style="color:#0a3a6b">Actividades Interactivas</h2>
+				<p>Participa en simulaciones, retos colaborativos y ejercicios multimedia para consolidar tus conocimientos.</p>
+				<ul style="margin-bottom:18px">
+					<li>Simulación de escenarios reales</li>
+					<li>Resolución de problemas</li>
+					<li>Retos colaborativos</li>
+					<li>Video tutorial: <a href="https://www.youtube.com/watch?v=interactive-learning" target="_blank">Aprendizaje interactivo</a></li>
+					<li>Descarga de material: <a href="../Images/guia_actividades.pdf" download>Guía de actividades PDF</a></li>
+				</ul>
+				<div style="margin-top:24px">
+					<h3>Sube tu archivo de actividad</h3>
+					<form id="uploadForm" enctype="multipart/form-data" aria-label="Subir archivo de actividad">
+						<input type="file" id="activityFile" name="activityFile" accept=".pdf,.docx,.jpg,.png" style="margin-bottom:8px">
+						<button type="button" onclick="alert('Archivo subido correctamente (simulado)')" style="background:#0b5ed7;color:#fff;padding:8px 18px;border:none;border-radius:8px;display:inline-flex;align-items:center;gap:6px"><span>⬆</span> Subir</button>
+						<span class="muted" style="font-size:0.92em;margin-left:8px">Solo archivos PDF, DOCX, JPG o PNG.</span>
+					</form>
+				</div>
+			</div>
+		</section>
+	</div>
+
+	<footer class="main-footer">
+		<div style="padding:18px 0;text-align:center;background:#0a3a6b;color:#fff;border-radius:0 0 12px 12px;margin-top:32px">
+			<strong>EVA Innovación Educativa 2026</strong> &mdash; Proyecto académico<br>
+			<span>Autor: Boyob | Fecha: Marzo 2026</span><br>
+			<span>Contacto: <a href="mailto:soporte@eva2026.com" style="color:#ffdd57;text-decoration:underline">soporte@eva2026.com</a></span><br>
+			<span>Consulta <a href="ayuda.html" style="color:#ffdd57;text-decoration:underline">Ayuda y soporte</a></span><br>
+			<span style="font-size:0.9em;color:#eee">Todos los derechos reservados &copy; 2026</span>
+		</div>
+	</footer>
+	<script src="../Codigo Js/session.js" defer></script>
+
+	</body>
+	</html>

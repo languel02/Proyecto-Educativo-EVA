@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Plataforma EVA Innovación Educativa 2026</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%230b5ed7'/%3E%3Ctext x='50' y='65' font-size='55' text-anchor='middle' fill='%23ffffff' font-family='Arial' font-weight='700'%3EE%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="../Estilo-Css/style.css">
+</head>
+
+<body>
+	<header>
+		<h1>Plataforma EVA Innovación Educativa 2026</h1>
+	</header>
+
+	<nav class="main-nav">
+		<a href="dashboard.html">Inicio</a>
+		<a href="recursos.html">Recursos</a>
+		<a href="actividades.html">Actividades</a>
+		<a href="foro.html">Foro</a>
+		<a href="evaluacion.html">Evaluación</a>
+		<a href="ayuda.html">Ayuda</a>
+	</nav>
+
+	<div class="container">
+		<div class="session-bar">
+			<span>Bienvenido,</span><strong id="nombre"></strong>
+			<button id="logout-btn">Salir</button>
+		</div>
+
+		<main>
+			<section class="card" aria-label="Panel principal del curso">
+				<h2>Bienvenido</h2>
+				<img src="../Images/educacion.svg" alt="Educación" style="width:120px;border-radius:12px;margin-bottom:16px;box-shadow:0 2px 8px #0b5ed7;">
+				<p class="muted">Accede a los recursos, completa las actividades y participa activamente en el foro.</p>
+				<div style="margin:18px 0">
+				  <label for="progreso" class="muted">Progreso del curso</label>
+				  <progress id="progreso" value="60" max="100" style="width:100%;height:18px"></progress>
+				  <span id="progreso-text" class="muted">60% completado</span>
+				</div>
+				<h3>Cursos disponibles</h3>
+				<div class="dashboard-courses" style="display:flex;gap:24px;flex-wrap:wrap;justify-content:center;margin-bottom:24px">
+					<div class="course-card" style="background:#fff;border-radius:12px;box-shadow:0 4px 16px rgba(16,24,40,0.08);padding:18px;width:220px;display:flex;flex-direction:column;align-items:center;transition:box-shadow .2s">
+						<img src="../Images/inteligencia.svg" alt="Innovación Educativa" style="width:80px;height:80px;border-radius:50%;margin-bottom:12px;">
+						<h4 style="margin:0 0 8px 0;color:#0b5ed7;font-size:1.1rem">Innovación Educativa 2026</h4>
+						<p style="font-size:0.95rem;color:#555;text-align:center">Descubre tendencias, IA, gamificación y realidad virtual.</p>
+						<a href="recursos.html" class="button" style="margin-top:12px;display:flex;align-items:center;gap:6px"><span>▶</span> Ver curso</a>
+					</div>
+					<div class="course-card" style="background:#fff;border-radius:12px;box-shadow:0 4px 16px rgba(16,24,40,0.08);padding:18px;width:220px;display:flex;flex-direction:column;align-items:center;transition:box-shadow .2s">
+						<img src="../Images/vr.svg" alt="Tecnología en el aula" style="width:80px;height:80px;border-radius:50%;margin-bottom:12px;">
+						<h4 style="margin:0 0 8px 0;color:#0b5ed7;font-size:1.1rem">Tecnología en el Aula</h4>
+						<p style="font-size:0.95rem;color:#555;text-align:center">Herramientas digitales para docentes y estudiantes.</p>
+						<a href="#" class="button secondary" style="margin-top:12px;display:flex;align-items:center;gap:6px"><span>⏳</span> Próximamente</a>
+					</div>
+					<div class="course-card" style="background:#fff;border-radius:12px;box-shadow:0 4px 16px rgba(16,24,40,0.08);padding:18px;width:220px;display:flex;flex-direction:column;align-items:center;transition:box-shadow .2s">
+						<img src="../Images/gamificacion.svg" alt="Aprendizaje personalizado" style="width:80px;height:80px;border-radius:50%;margin-bottom:12px;">
+						<h4 style="margin:0 0 8px 0;color:#0b5ed7;font-size:1.1rem">Aprendizaje Personalizado</h4>
+						<p style="font-size:0.95rem;color:#555;text-align:center">Metodologías adaptativas y recursos interactivos.</p>
+						<a href="#" class="button secondary" style="margin-top:12px;display:flex;align-items:center;gap:6px"><span>⏳</span> Próximamente</a>
+					</div>
+				</div>
+				<div style="margin-top:32px">
+				  <h3>Testimonios</h3>
+				  <blockquote style="background:#eef3ff;padding:16px;border-radius:8px;margin-bottom:12px;display:flex;align-items:center;gap:12px"><span style="font-size:1.5em">💬</span> <span>“Este curso me ayudó a innovar en mi aula y motivar a mis estudiantes.”<br><span class="muted">— Ana, docente</span></span></blockquote>
+				  <blockquote style="background:#eef3ff;padding:16px;border-radius:8px;display:flex;align-items:center;gap:12px"><span style="font-size:1.5em">💬</span> <span>“La plataforma es fácil de usar y el certificado es muy útil para mi CV.”<br><span class="muted">— Luis, estudiante</span></span></blockquote>
+				</div>
+				<div style="margin-top:32px">
+				  <h3>Logros</h3>
+				  <span style="display:inline-block;background:#ffdd57;color:#0b5ed7;padding:6px 18px;border-radius:18px;font-weight:600;margin-right:8px">🏅 Curso completado</span>
+				  <span style="display:inline-block;background:#eef3ff;color:#0a3a6b;padding:6px 18px;border-radius:18px;font-weight:600">💬 Participación en foro</span>
+				</div>
+				<div style="margin-top:24px">
+					<h3>Accesibilidad y ayuda</h3>
+					<ul>
+						<li>Usa el menú para navegar fácilmente</li>
+						<li>Solicita ayuda en <a href="ayuda.html">Ayuda/Soporte</a></li>
+						<li>Activa el modo alto contraste en configuración</li>
+						<li>Consulta la <a href="bienvenida.html">Guía para nuevos usuarios</a></li>
+					</ul>
+					<p>¿Dudas sobre el uso? Mira el <a href="https://www.youtube.com/watch?v=eva-dashboard" target="_blank">video tutorial</a>.</p>
+				</div>
+			</section>
+		</main>
+		</div>
+		<footer class="main-footer">
+			<div style="padding:18px 0;text-align:center;background:#0a3a6b;color:#fff;border-radius:0 0 12px 12px;margin-top:32px">
+				<strong>EVA Innovación Educativa 2026</strong> &mdash; Proyecto académico<br>
+				<span>Autor: Boyob | Fecha: Marzo 2026</span><br>
+				<span>Contacto: <a href="mailto:soporte@eva2026.com" style="color:#ffdd57;text-decoration:underline">soporte@eva2026.com</a></span><br>
+				<span>Consulta <a href="ayuda.html" style="color:#ffdd57;text-decoration:underline">Ayuda y soporte</a></span><br>
+				<span style="font-size:0.9em;color:#eee">Todos los derechos reservados &copy; 2026</span>
+			</div>
+		</footer>
+		<script src="../Codigo Js/session.js" defer></script>
+		</body>
+		</html>
