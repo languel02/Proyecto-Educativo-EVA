@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Ayuda y Contacto</title>
+<link rel="stylesheet" href="../Estilo-Css/style.css">
+</head>
+<body>
+<header>
+<h1>Ayuda y Contacto</h1>
+</header>
+<nav class="main-nav">
+<a href="dashboard.html">Inicio</a>
+<a href="recursos.html">Recursos</a>
+<a href="actividades.html">Actividades</a>
+<a href="foro.html">Foro</a>
+<a href="evaluacion.html">Evaluación</a>
+</nav>
+<div class="container">
+<section class="card" aria-label="Ayuda y contacto">
+<h2>¿Necesitas ayuda?</h2>
+<p>Consulta las preguntas frecuentes o envía tu consulta al equipo de soporte.</p>
+<div style="display:flex;gap:24px;flex-wrap:wrap;justify-content:center;margin-bottom:24px">
+	<div class="faq-card" style="background:#fff;border-radius:12px;box-shadow:0 4px 16px rgba(16,24,40,0.08);padding:18px;width:220px;display:flex;flex-direction:column;align-items:center;transition:box-shadow .2s">
+		<span style="font-size:2em;color:#0b5ed7;margin-bottom:8px">❓</span>
+		<strong>¿Cómo accedo a los cursos?</strong>
+		<span class="muted" style="font-size:0.92em">Desde el panel principal selecciona el curso y haz clic en "Ver curso".</span>
+	</div>
+	<div class="faq-card" style="background:#fff;border-radius:12px;box-shadow:0 4px 16px rgba(16,24,40,0.08);padding:18px;width:220px;display:flex;flex-direction:column;align-items:center;transition:box-shadow .2s">
+		<span style="font-size:2em;color:#0b5ed7;margin-bottom:8px">📄</span>
+		<strong>¿Cómo obtengo mi certificado?</strong>
+		<span class="muted" style="font-size:0.92em">Completa el curso y la evaluación final, luego descarga tu certificado.</span>
+	</div>
+	<div class="faq-card" style="background:#fff;border-radius:12px;box-shadow:0 4px 16px rgba(16,24,40,0.08);padding:18px;width:220px;display:flex;flex-direction:column;align-items:center;transition:box-shadow .2s">
+		<span style="font-size:2em;color:#0b5ed7;margin-bottom:8px">💬</span>
+		<strong>¿Cómo participo en el foro?</strong>
+		<span class="muted" style="font-size:0.92em">Ingresa a la sección foro, escribe tu comentario y publícalo.</span>
+	</div>
+</div>
+<h3>Contacto</h3>
+<form aria-label="Formulario de contacto" autocomplete="on" style="margin-top:18px">
+<label for="email">Correo electrónico</label>
+<input type="email" id="email" name="email" placeholder="tu@email.com" required aria-required="true" style="width:100%;padding:12px;border-radius:8px;border:1px solid #e6e9ee;margin-bottom:8px">
+<label for="mensaje">Mensaje</label>
+<textarea id="mensaje" name="mensaje" rows="4" placeholder="Describe tu consulta" required aria-required="true" style="width:100%;padding:12px;border-radius:8px;border:1px solid #e6e9ee"></textarea>
+<button type="submit" style="background:#0b5ed7;color:#fff;padding:8px 18px;border:none;border-radius:8px;display:inline-flex;align-items:center;gap:6px;margin-top:8px"><span>✉️</span> Enviar</button>
+<div style="margin-top:12px">
+	<span class="muted" aria-live="polite" id="ayuda-feedback"></span>
+</div>
+</form>
+</section>
+</div>
+<script src="../Codigo Js/session.js" defer></script>
+<footer class="main-footer">
+	<div style="padding:18px 0;text-align:center;background:#0a3a6b;color:#fff;border-radius:0 0 12px 12px;margin-top:32px">
+		<strong>EVA Innovación Educativa 2026</strong> &mdash; Proyecto académico<br>
+		<span>Autor: Boyob | Fecha: Marzo 2026</span><br>
+		<span>Contacto: <a href="mailto:soporte@eva2026.com" style="color:#ffdd57;text-decoration:underline">soporte@eva2026.com</a></span><br>
+		<span>Consulta <a href="ayuda.html" style="color:#ffdd57;text-decoration:underline">Ayuda y soporte</a></span><br>
+		<span style="font-size:0.9em;color:#eee">Todos los derechos reservados &copy; 2026</span>
+	</div>
+</footer>
+</body>
+</html>

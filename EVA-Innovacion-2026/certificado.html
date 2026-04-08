@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Certificado</title>
+<link rel="stylesheet" href="../Estilo-Css/style.css">
+</head>
+
+<body>
+
+		<div class="certificate" aria-label="Certificado de finalización">
+				<img src="../Images/certificado.svg" alt="Logo EVA" class="logo" style="animation:fadeIn 1.2s">
+				<h1 style="animation:fadeIn 1.2s">Certificado de Finalización</h1>
+				<hr style="border:1px solid #0b5ed7;margin:18px 0;">
+				<p>Se certifica que</p>
+				<h2 id="nombre" style="font-size:1.5em;font-weight:700;color:#0b5ed7;animation:fadeIn 1.2s">—</h2>
+				<p>ha completado satisfactoriamente el curso</p>
+				<h3 style="color:#0a3a6b">Innovación Educativa 2026</h3>
+				<p class="muted">Fecha: <span id="fecha"></span></p>
+				<div style="margin-top:18px;display:flex;gap:12px;justify-content:center">
+						<button id="download-btn" class="secondary" style="background:#0b5ed7;color:#fff;font-weight:700;font-size:1.08rem;padding:12px 24px;border-radius:8px;border:none;cursor:pointer;display:inline-flex;align-items:center;gap:6px"><span>⬇</span> Descargar certificado (PDF)</button>
+				</div>
+				<hr style="border:1px solid #0b5ed7;margin:18px 0;">
+				<p style="font-size:0.95rem;color:#888;margin-top:12px">EVA Innovación Educativa | www.eva2026.com</p>
+						<div style="margin-top:24px">
+							<h3>¿Cómo usar tu certificado?</h3>
+							<ul>
+								<li>Inclúyelo en tu CV o portafolio profesional</li>
+								<li>Compártelo en LinkedIn y redes sociales</li>
+								<li>Preséntalo en procesos de selección o ascenso</li>
+								<li>Solicita validación institucional si corresponde</li>
+							</ul>
+							<p>¿Necesitas ayuda? <a href="ayuda.html">Contacta soporte</a></p>
+						</div>
+				<style>
+				@keyframes fadeIn {
+						0% { opacity: 0; transform: translateY(24px); }
+						100% { opacity: 1; transform: translateY(0); }
+				}
+				</style>
+		</div>
+
+	<script>
+		document.getElementById('fecha').textContent = new Date().toLocaleDateString();
+		document.addEventListener('DOMContentLoaded', function(){
+			const dl = document.getElementById('download-btn');
+			if (dl) dl.addEventListener('click', function(){ window.print(); });
+		});
+	</script>
+
+	<footer class="main-footer">
+		<div style="padding:18px 0;text-align:center;background:#0a3a6b;color:#fff;border-radius:0 0 12px 12px;margin-top:32px">
+			<strong>EVA Innovación Educativa 2026</strong> &mdash; Proyecto académico<br />
+			<span>Autor: Rossy Perez | Fecha: Marzo 2026</span><br />
+			<span>Contacto: <a href="mailto:soporte@eva2026.com" style="color:#ffdd57;text-decoration:underline">soporte@eva2026.com</a></span><br />
+			<span>Consulta <a href="ayuda.html" style="color:#ffdd57;text-decoration:underline">Ayuda y soporte</a></span><br />
+			<span style="font-size:0.9em;color:#eee">Todos los derechos reservados &copy; 2026</span>
+		</div>
+	</footer>
+	<script src="../Codigo Js/session.js" defer></script>
+
+	</body>
+	</html>

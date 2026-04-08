@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Foro</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%230b5ed7'/%3E%3Ctext x='50' y='65' font-size='55' text-anchor='middle' fill='%23ffffff' font-family='Arial' font-weight='700'%3EE%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="../Estilo-Css/style.css">
+</head>
+
+<body>
+	<header>
+		<h1>Foro de Discusión</h1>
+	</header>
+	<nav class="main-nav">
+		<a href="dashboard.html">Inicio</a>
+		<a href="recursos.html">Recursos</a>
+		<a href="actividades.html">Actividades</a>
+		<a href="evaluacion.html">Evaluación</a>
+	</nav>
+
+	<div class="container">
+		<section class="card" aria-label="Foro de discusión">
+			<img src="../Images/foro.svg" alt="Foro" style="width:120px;border-radius:12px;margin-bottom:16px;box-shadow:0 2px 8px #0b5ed7;">
+			<h2>Participa en el foro</h2>
+			<p class="muted">Comparte tus ideas, dudas y experiencias. Tu nombre será visible para otros participantes.</p>
+			<div class="form-group" style="margin-bottom:18px">
+				<label for="comentario" class="muted">Escribe tu comentario</label>
+				<textarea id="comentario" rows="4" placeholder="Escribe aquí tu aporte..." aria-label="Comentario" style="width:100%;padding:12px;border-radius:8px;border:1px solid #e6e9ee"></textarea>
+			</div>
+			<div style="display:flex;justify-content:flex-end;gap:12px;margin-bottom:12px">
+				<button onclick="publicar()" style="background:#0b5ed7;color:#fff;padding:8px 18px;border:none;border-radius:8px;display:inline-flex;align-items:center;gap:6px"><span>💬</span> Publicar</button>
+			</div>
+			<ul id="lista" class="forum-list" aria-label="Lista de comentarios" style="margin-bottom:24px"></ul>
+			<div style="margin-top:24px;padding:18px;background:#eef3ff;border-radius:12px;box-shadow:0 2px 8px #0b5ed7;">
+				<h3>Consejos para participar</h3>
+				<ul>
+					<li>Respeta las opiniones de los demás</li>
+					<li>Contribuye con ideas constructivas</li>
+					<li>Consulta recursos antes de preguntar</li>
+					<li>Solicita ayuda en <a href="ayuda.html">Ayuda/Soporte</a></li>
+				</ul>
+				<p>¿Nuevo en el foro? Mira el <a href="https://www.youtube.com/watch?v=eva-foro" target="_blank">video guía</a>.</p>
+			</div>
+		</section>
+	</div>
+
+	<script src="../Codigo Js/foro.js" defer></script>
+	<script src="../Codigo Js/session.js" defer></script>
+<footer class="main-footer">
+	<div style="padding:18px 0;text-align:center;background:#0a3a6b;color:#fff;border-radius:0 0 12px 12px;margin-top:32px">
+		<strong>EVA Innovación Educativa 2026</strong> &mdash; Proyecto académico<br>
+		<span>Autor: Boyob | Fecha: Marzo 2026</span><br>
+		<span>Contacto: <a href="mailto:soporte@eva2026.com" style="color:#ffdd57;text-decoration:underline">soporte@eva2026.com</a></span><br>
+		<span>Consulta <a href="ayuda.html" style="color:#ffdd57;text-decoration:underline">Ayuda y soporte</a></span><br>
+		<span style="font-size:0.9em;color:#eee">Todos los derechos reservados &copy; 2026</span>
+	</div>
+</footer>
+</body>
+</html>
