@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="120" height="120">
+	<rect width="120" height="120" fill="transparent"/>
+	<circle cx="60" cy="60" r="40" fill="#0b5ed7"/>
+	<text x="60" y="70" font-size="32" fill="#fff" text-anchor="middle" font-family="Arial" font-weight="bold">EDU</text>
+</svg>
